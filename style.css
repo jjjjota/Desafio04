@@ -1,0 +1,179 @@
+body {
+    margin: 0px;
+
+    font-family: 'Lato', 'sans-serif';
+}
+
+button {
+    display: inline-block;
+
+    padding: 10px 15px;
+    border: none;
+    border-radius: 10px;
+    background-color: #337AB7;
+
+    text-decoration: none;
+    text-align: center;
+    color: #FFF;
+}
+
+.clear {
+    clear: both;
+}
+
+/* HEADER*/
+.header {
+    background-image: url(images/bg.jpeg);
+    background-size: cover;
+
+    margin: 0px;
+}
+
+/* NAVBAR */
+.navbar {
+    position: relative;
+
+    padding-top: 50px;
+    width: 100%;
+    height: 45px;
+    background-color: rgba(0,0,0,0);
+}
+
+.navbar .logo {
+    position: absolute;
+
+    margin-left: 20%;
+    width: auto;
+    height: 45px;
+}
+
+.navbar ul {
+    position: absolute;
+    right: 20%;
+}
+
+.navbar li {
+    float: left;
+
+    margin-left: 20px;
+
+    list-style-type: none;
+    color: #595B66;
+}
+
+/* CONTAINER-IMAGE */
+.container-imagen {
+    text-align: center;
+    color: #FFF;
+}
+
+.container-imagen p.titulo {
+    font-size: 45px;
+}
+
+
+/* TODO: ALINEAR LOS BOTONES */
+.container-imagen .button-start {
+    float: left;
+
+    margin-left: 0px;
+}
+
+.container-image button.button-info {
+    float: left;
+
+    margin-left: 0px;
+    background-color: #5CB85C;
+}
+
+.container-imagen .trans-block {
+    width: 100%;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+/* CONTAINER DESCRIPCION */
+.container-descripcion {
+    margin-top: 70px;
+    margin-left: 17.5%;
+    width: 65%;
+    height: auto;
+
+    text-align: center;
+}
+
+.container-descripcion p.subtitulo {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.container-descripcion .img-people {
+    width: 450px;
+    height: auto;
+}
+
+
+/* CONTAINER INSCRIPCION */
+.container-inscripcion {
+    border-top: solid 1px #CCC;
+    border-bottom: solid 1px #CCC;
+    padding: 50px 0px;
+    background-color: #FAFAFA;
+
+    text-align: center;
+}
+
+.container-inscripcion p.subtitulo {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.container-inscripcion p.cuerpo {
+    margin-left: 17.5%;
+    width: 65%;
+}
+
+/* CONTAINER CONTACTO*/
+.container-contacto {
+    padding-top: 50px;
+    padding-bottom: 100px;
+    width: 100%;
+    height: auto;
+}
+
+.container-contacto .contacto{
+    float: left;
+
+    margin-left: 25%;
+}
+
+.container-contacto .suscripcion{
+    float: left;
+    margin-left: 100px;
+}
+
+.container-contacto p.titulo {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.container-contacto p {
+    margin: 0px;
+}
+
+.container-contacto .ingresar-mail {
+    float: left;
+    border: solid 1px;
+}
+
+/* FOOTER */
+.footer {
+    width: 100%;
+    padding-left: 10%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: #222;
+
+    font-size: 20px;
+    color: #FFF;
+}
