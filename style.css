@@ -1,179 +1,205 @@
 body {
     margin: 0px;
 
-    font-family: 'Lato', 'sans-serif';
+    font-family: Arial, 'sans-serif';
+}
+
+p {
+    color: #333;
+}
+
+p.titulo {
+    font-family: 'Open Sans', 'sans-serif';
+    font-size: 45px;
+    margin-bottom: 40px;
+}
+
+p.subtitulo {
+    font-family: 'Open Sans', 'sans-serif';
+    margin: 0px;
+
+    font-size: 20px;
+    font-weight: bold;
+}
+
+p.subsubtitulo {
+    margin: 0px;
+
+    font-size: 20px;
+}
+
+p.parrafo {
+    margin: 10px;
+    font-size: 12px;
+}
+
+p.parrafo2 {
+    margin-bottom: 10px;
+
+    font-size: 14px;
 }
 
 button {
-    display: inline-block;
-
     padding: 10px 15px;
     border: none;
-    border-radius: 10px;
-    background-color: #337AB7;
+    border-radius: 5px;
 
+    background-color: #337AB7;
     text-decoration: none;
     text-align: center;
+    font-size: 20px;
     color: #FFF;
+
+    cursor: pointer;
+}
+
+button.button-pequeno {
+    padding: 10px;
+    border: solid 1px #CCC;
+
+    background-color: #FFF;
+    font-size: 15px;
+    color: inherit;
+}
+
+input {
+    padding: 10px;
+    border: solid 1px #CCC;
+    border-radius: 5px;
+
+    font-size: 15px;
+    color: #CCC;
+}
+
+a {
+    text-decoration: none;
+    color: inherit; /* Aquí reemplazamos el color por default (blue) por el del padre */
+}
+
+a.mail {
+    color: #467AC4;
 }
 
 .clear {
     clear: both;
 }
 
-/* HEADER*/
-.header {
+/* HEADER *********************************************************************/
+#header {
     background-image: url(images/bg.jpeg);
     background-size: cover;
 
     margin: 0px;
 }
 
-/* NAVBAR */
-.navbar {
-    position: relative;
-
-    padding-top: 50px;
+/* NAVBAR *****************************/
+#navbar {
+    padding-top: 25px;
     width: 100%;
-    height: 45px;
-    background-color: rgba(0,0,0,0);
+    height: 40px;
 }
 
-.navbar .logo {
-    position: absolute;
+#navbar .logo {
+    float: left;
 
-    margin-left: 20%;
+    margin-left: 15%;
     width: auto;
-    height: 45px;
+    height: 40px;
 }
 
-.navbar ul {
-    position: absolute;
-    right: 20%;
+#navbar ul {
+    margin-left: 70%;
 }
 
-.navbar li {
+#navbar li {
     float: left;
 
     margin-left: 20px;
 
     list-style-type: none;
-    color: #595B66;
+    color: #777;
 }
 
-/* CONTAINER-IMAGE */
-.container-imagen {
+/* CONTAINER-IMAGEN  *******************/
+#container-imagen {
     text-align: center;
+}
+
+#container-imagen p {
     color: #FFF;
 }
 
-.container-imagen p.titulo {
-    font-size: 45px;
+#container-imagen button.button-start {
+    margin-right: 10px;
 }
+#container-imagen button.button-info {
+    margin-left: 10px;
 
-
-/* TODO: ALINEAR LOS BOTONES */
-.container-imagen .button-start {
-    float: left;
-
-    margin-left: 0px;
-}
-
-.container-image button.button-info {
-    float: left;
-
-    margin-left: 0px;
     background-color: #5CB85C;
 }
 
-.container-imagen .trans-block {
+#container-imagen .trans-block {
     width: 100%;
-    height: 50px;
+    height: 70px;
     background-color: rgba(0, 0, 0, 0);
 }
 
-/* CONTAINER DESCRIPCION */
-.container-descripcion {
-    margin-top: 70px;
-    margin-left: 17.5%;
-    width: 65%;
-    height: auto;
+/* CONTAINER DESCRIPCION ******************************************************/
+#container-descripcion {
+    padding-top: 70px;
 
     text-align: center;
 }
 
-.container-descripcion p.subtitulo {
-    font-size: 25px;
-    font-weight: bold;
-}
-
-.container-descripcion .img-people {
-    width: 450px;
+#container-descripcion .img-people {
+    width: 400px;
     height: auto;
 }
 
-
-/* CONTAINER INSCRIPCION */
-.container-inscripcion {
+/* CONTAINER INSCRIPCION ******************************************************/
+#container-inscripcion {
     border-top: solid 1px #CCC;
     border-bottom: solid 1px #CCC;
-    padding: 50px 0px;
+    padding: 70px 0px;
     background-color: #FAFAFA;
 
     text-align: center;
 }
 
-.container-inscripcion p.subtitulo {
-    font-size: 25px;
-    font-weight: bold;
-}
-
-.container-inscripcion p.cuerpo {
-    margin-left: 17.5%;
-    width: 65%;
-}
-
-/* CONTAINER CONTACTO*/
-.container-contacto {
-    padding-top: 50px;
-    padding-bottom: 100px;
+/* CONTAINER CONTACTO *********************************************************/
+#container-contacto {
+    padding-top: 70px;
+    padding-bottom: 70px;
     width: 100%;
     height: auto;
 }
 
-.container-contacto .contacto{
+#container-contacto .contacto{
     float: left;
 
-    margin-left: 25%;
+    margin-left: 20%;
 }
 
-.container-contacto .suscripcion{
+#container-contacto .suscripcion{
     float: left;
-    margin-left: 100px;
+
+    margin-left: 10%;
 }
 
-.container-contacto p.titulo {
-    font-size: 20px;
-    margin-bottom: 10px;
-}
-
-.container-contacto p {
-    margin: 0px;
-}
-
-.container-contacto .ingresar-mail {
+#container-contacto .suscripcion .ingresar-mail {
     float: left;
     border: solid 1px;
 }
 
-/* FOOTER */
-.footer {
+/* FOOTER *********************************************************************/
+#footer {
     width: 100%;
     padding-left: 10%;
     padding-top: 30px;
     padding-bottom: 30px;
     background-color: #222;
 
+    font-family: 'Roboto', 'sans-serif';
     font-size: 20px;
     color: #FFF;
 }
